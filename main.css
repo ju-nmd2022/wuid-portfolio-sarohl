@@ -1,0 +1,60 @@
+h1 {
+  color: rgb(212, 214, 195);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 60px;
+  background-image: url(ocean.png);
+  background-color: darkseagreen;
+}
+
+strong {
+  padding-left: 36%;
+  color: rgb(133, 142, 151);
+  font-family: sans-serif;
+  font-size: x-large;
+  font-weight: 500;
+}
+
+p2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-left: 25%;
+  color: rgb(227, 228, 217);
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+  width: 70%;
+  padding-left: 25%;
+  margin-top: 5mm;
+}
+
+li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+  font-weight: 500;
+  padding-left: 25%;
+}
+
+img {
+  border-radius: 100%;
+  margin-right: 21%;
+  margin-top: 4mm;
+  width: 10cm;
+  height: 100%;
+}
+
+body {
+  background-color: rgb(195, 207, 186);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.text-container {
+  padding-left: 10%;
+}
