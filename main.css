@@ -58,3 +58,11 @@ body {
 .text-container {
   padding-left: 10%;
 }
+
+a {
+  color: black;
+}
+
+a:hover {
+  font-weight: bold;
+}
