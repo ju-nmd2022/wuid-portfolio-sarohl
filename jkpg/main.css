@@ -1,0 +1,74 @@
+body {
+  background-image: url(jkpg_dag.jpg);
+  background-size: cover;
+}
+
+html,
+body {
+  margin: 0px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 7rem 1fr 3rem;
+  grid-template-areas:
+    "header header header"
+    ". content ."
+    "footer footer footer";
+  min-height: 100vh;
+}
+
+.header {
+  background-color: rgba(81, 79, 80, 0.449);
+  grid-area: header;
+  font-size: 15mm;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-weight: lighter;
+  padding-top: 6mm;
+}
+
+.content {
+  background-color: rgba(114, 114, 123, 0.974);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  grid-area: content;
+  margin-bottom: 1cm;
+  margin-top: 1cm;
+  padding-top: 7mm;
+  padding-left: 9%;
+  padding-right: 9%;
+}
+
+.footer {
+  background-color: rgba(119, 119, 130, 0.679);
+  grid-area: footer;
+}
+
+li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  text-decoration: none;
+}
+
+li:hover {
+  text-decoration: none;
+  font-size: medium;
+}
+
+strong {
+  font-size: large;
+  font-variant: small-caps;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(152, 152, 152);
+  font-size: medium;
+  text-decoration: underline;
+}
