@@ -1,0 +1,106 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-gap: 40px;
+  grid-row-gap: 50px;
+  color: black;
+  justify-content: center;
+}
+
+header {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(245, 245, 220, 0.835);
+}
+
+.grid-item-1 {
+  background-color: beige;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.grid-item-2 {
+  background-color: beige;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.grid-item-3 {
+  background-color: beige;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.grid-item-4 {
+  background-color: beige;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.grid-item-5 {
+  background-color: beige;
+  border-radius: 50px;
+  text-align: center;
+}
+
+h2 {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+}
+
+img {
+  max-width: 250px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.cece {
+  max-width: 64%;
+}
+
+.wes {
+  max-width: 90%;
+}
+
+.rat {
+  max-width: 80%;
+  padding-bottom: 20%;
+}
+
+.kenny {
+  max-width: 80%;
+}
+
+@media screen and (min-width: 414px) {
+  body {
+    background-color: rgb(247, 218, 208);
+    color: rgb(236, 222, 205);
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-gap: 40px;
+    grid-row-gap: 50px;
+    color: black;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-gap: 40px;
+    grid-row-gap: 50px;
+    color: black;
+    justify-content: center;
+  }
+}

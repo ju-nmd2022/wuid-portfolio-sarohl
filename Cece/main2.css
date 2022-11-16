@@ -1,0 +1,16 @@
+h1 {
+  background-image: url(green.png);
+  text-align: center;
+}
+
+body {
+  background-image: url(green.png);
+}
+
+img {
+  height: 20cm;
+  width: 28cm;
+  padding-left: 5cm;
+  padding-top: 1cm;
+  padding-bottom: 5cm;
+}

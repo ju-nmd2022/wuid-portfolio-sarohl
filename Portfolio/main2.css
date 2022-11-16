@@ -1,0 +1,39 @@
+h1 {
+  background-image: url(green.png);
+  text-align: center;
+}
+
+body {
+  background-image: url(green.png);
+}
+
+img {
+  max-width: 50%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
+  grid-row-gap: 3px;
+}
+
+.grid-item-1 {
+  text-align: justify;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.grid-item-2 {
+  text-align: center;
+}
+
+@media screen and (max-width: 414px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+    grid-row-gap: 3px;
+  }
+}
