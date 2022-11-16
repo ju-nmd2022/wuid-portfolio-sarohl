@@ -76,6 +76,14 @@ img {
   max-width: 80%;
 }
 
+a {
+  color: black;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
 @media screen and (min-width: 414px) {
   body {
     background-color: rgb(247, 218, 208);
