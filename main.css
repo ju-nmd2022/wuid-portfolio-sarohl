@@ -110,9 +110,13 @@ a:hover {
 .flip-box-back {
   background-color: #555;
   color: white;
-  /* position: absolute; */
+  position: absolute;
   transform: rotateY(180deg);
-  font-size: x-large;
+  font-size: xx-large;
   font-family: "Times New Roman", Times, serif;
+}
+
+.p3 {
   text-align: center;
+  font-family: "Times New Roman", Times, serif;
 }
