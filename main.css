@@ -5,7 +5,7 @@ header {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   font-weight: lighter;
-  padding-top: 6mm;
+  padding-top: 10mm;
 }
 
 html,
@@ -16,7 +16,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 5rem;
+  grid-template-rows: 2rem;
   grid-template-areas:
     "header header header"
     ". content ."
@@ -110,7 +110,7 @@ a:hover {
 .flip-box-back {
   background-color: #555;
   color: white;
-  position: absolute;
+  /* position: absolute; */
   transform: rotateY(180deg);
   font-size: x-large;
   font-family: "Times New Roman", Times, serif;
