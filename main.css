@@ -1,62 +1,59 @@
-h1 {
-  color: rgb(212, 214, 195);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+header {
+  background-color: url(ocean.png);
+  grid-area: header;
+  font-size: 15mm;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  font-size: 60px;
-  background-image: url(ocean.png);
-  background-color: darkseagreen;
+  font-weight: lighter;
+  padding-top: 6mm;
 }
 
-strong {
-  padding-left: 36%;
-  color: rgb(133, 142, 151);
-  font-family: sans-serif;
-  font-size: x-large;
-  font-weight: 500;
+html,
+body {
+  margin: 0px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 5rem;
+  grid-template-areas:
+    "header header header"
+    ". content ."
+    "footer footer footer";
+  min-height: 100vh;
+}
+
+.content {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  grid-area: content;
 }
 
 p2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 10pt;
   font-weight: bold;
-  padding-left: 25%;
   color: rgb(227, 228, 217);
 }
 
 p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: small;
-  width: 70%;
-  padding-left: 25%;
+  width: 80%;
   margin-top: 5mm;
+  padding-right: 90%;
 }
 
 li {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: small;
   font-weight: 500;
-  padding-left: 25%;
-}
-
-img {
-  border-radius: 100%;
-  margin-right: 21%;
-  margin-top: 4mm;
-  width: 10cm;
-  height: 100%;
 }
 
 body {
   background-color: rgb(195, 207, 186);
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-}
-
-.text-container {
-  padding-left: 10%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -65,4 +62,57 @@ a {
 
 a:hover {
   font-weight: bold;
+}
+
+.me {
+  border-radius: 50%;
+}
+
+/* section {
+  margin: ;
+} */
+
+.flip-box {
+  grid-area: content;
+  background-color: transparent;
+  margin: 0;
+  width: 300px;
+  height: 310px;
+  border-radius: 50%;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: absolute;
+  width: 300px;
+  height: 310px;
+  border-radius: 50%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+  /* transform: rotateY(20deg); */
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-back {
+  background-color: #555;
+  color: white;
+  position: absolute;
+  transform: rotateY(180deg);
+  font-size: x-large;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
 }
